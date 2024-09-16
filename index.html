@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foody</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font awsome kit -->
+    <script src="https://kit.fontawesome.com/9e8306aeda.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header>
+      <!-- navbar staring -->
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"/>
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li>
+                <a>Potato</a>
+              </li>
+              <li>
+                <a>Soup</a>
+              </li>
+              <li>
+                <a>Chicken</a>
+              </li>
+              <li>
+                <a>Beef</a>
+              </li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl"><img class="rounded-full w-24 h-8" src="Resourcces/imgages/foody-logo.png" alt="" srcset="">foody</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li>
+              <a>Potato</a>
+            </li>
+            <li>
+              <a>Soup</a>
+            </li>
+            <li>
+              <a>Chicken</a>
+            </li>
+            <li>
+              <a>Beef</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn">Button</a>
+        </div>
+      </div>
+
+      <!-- navbar ending -->
+
+      <!-- Banner start -->
+      <div class="carousel w-full">
+        <!-- Carousel # 1 -->
+        <div id="slide1" class="carousel-item relative w-full">
+          <div class="hero" style="background-image: url(Resourcces/banner1.jpg);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-neutral-content text-center py-20">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-bold">Potato</h1>
+                <p class="mb-3">
+                  Drizzled with a tangy garlic aioli or sprinkled with fresh chives, these potatoes offer an irresistible combination of textures and flavors that make them a standout side dish or satisfying snack.
+                </p>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full text-white font-bold py-2 px-4 rounded-full">Get Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <!-- Carousel # 2 -->
+        <div id="slide2" class="carousel-item relative w-full">
+          <div class="hero" style="background-image: url(Resourcces/banner2.jpg);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-neutral-content text-center">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-bold">Soup</h1>
+                <p class="mb-5">
+                  Subtly sweet with a hint of creamy richness, enhanced by a touch of earthy sage and a swirl of tangy crème fraîche. Each spoonful is a harmonious blend of smooth, velvety texture and delicate spices, making it a perfect, heartwarming dish for any occasion.
+                </p>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full text-white font-bold py-2 px-4 rounded-full">Get Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <!-- Carousel # 3 -->
+        <div id="slide3" class="carousel-item relative w-full">
+          <div class="hero" style="background-image: url(Resourcces/banner3.jpg);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-neutral-content text-center">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-bold">Chicken</h1>
+                <p class="mb-5">
+                  Envision succulent, herb-marinated chicken breasts, grilled to perfection with a golden, slightly crispy exterior and a tender, juicy interior. Infused with a medley of fresh thyme, rosemary, and garlic, each bite is bursting with savory, aromatic flavors
+                </p>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full text-white font-bold py-2 px-4 rounded-full">Get Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <!-- Carousel # 4 -->
+        <div id="slide4" class="carousel-item relative w-full">
+          <div class="hero" style="background-image: url(Resourcces/banner4.jpg);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-neutral-content text-center">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-bold">Beef</h1>
+                <p class="mb-5">
+                  Tender and juicy, with each bite offering a robust, beefy flavor enhanced by a touch of garlic and rosemary.
+                </p>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Get Started</button>
+              </div>
+            </div>
+          </div>
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+
+      </div>
+      <!-- Banner end -->
+
+    </header>
+  </body>
+
+</html>
