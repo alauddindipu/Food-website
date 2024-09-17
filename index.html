@@ -4,11 +4,19 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foody</title>
+    <title>Xfoody</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font awsome kit -->
     <script src="https://kit.fontawesome.com/9e8306aeda.js" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <style>
+      .selected {
+        color: goldenrod;
+        background-color: rgb(253, 229, 229);
+      }
+    </style>
   </head>
 
   <body>
@@ -37,10 +45,10 @@
               </li>
             </ul>
           </div>
-          <a class="btn btn-ghost text-xl"><img class="rounded-full w-24 h-8" src="Resourcces/imgages/foody-logo.png" alt="" srcset="">foody</a>
+          <a class="btn btn-ghost text-2xl hover:font-bold"><img class="rounded-full w-24 h-8" src="Resourcces/imgages/foody-logo.png" alt="" srcset="">foody</a>
         </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
+        <div id="menu" class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-2xl">
             <li>
               <a id="search-potato" onclick="loadPotato()">Potato</a>
             </li>
@@ -170,6 +178,13 @@
     </main>
 
     <script src="js/script.js"></script>
+
+    <script>
+      $("#menu li").on("click", function () {
+        $("#menu li").removeClass("selected");
+        $(this).addClass("selected");
+      });
+    </script>
 
   </body>
 
