@@ -31,7 +31,7 @@ const showMeals = meals => {
     mealCard.classList = "card card-compact bg-base-100 shadow-xl";
 
     mealCard.innerHTML = `
-            <figure>
+            <figure">
                 <img src=${meal.strMealThumb} alt="Image of ${meal.strMeal}" />
             </figure>
             <div class="card-body">
