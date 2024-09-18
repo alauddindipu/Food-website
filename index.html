@@ -25,13 +25,13 @@
         border-radius: 10px;
       }
 
-      /* Demo Stuff End -> */
-
-      /* <- Magic Stuff Start */
-
-      .btn:hover {
+      .btn:hover,
+      .navbar:hover {
         background-position: right center;
-        /* change the direction of the change here */
+      }
+
+      .navbar {
+        background-image: linear-gradient(to right, #ffc367 0%, #f9de8a 51%, #fd8b17 100%);
       }
 
       .btn-1 {
@@ -39,7 +39,7 @@
       }
 
       .selected {
-        color: goldenrod;
+        color: orange;
         background-color: rgb(253, 229, 229);
         border-radius: 10px;
       }
@@ -94,7 +94,8 @@
         <!-- <section class=" text-center p-2"> <input id="search-input" type="text" placeholder="Search your food" class="input input-bordered w-full max-w-xs"/> <button id="serach-button" onclick="loadFood()" class="btn btn-primary">Search</button> </section> -->
 
         <div class="navbar-end">
-          <a class="btn">Login</a>
+          <button type="button" class="text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-xl px-5 py-2.5 text-center me-2 mb-2 dark:focus:ring-yellow-900">Login</button>
+
         </div>
       </div>
       <!-- navbar ending -->
@@ -256,7 +257,7 @@
         <a class="link link-hover">Cookie policy</a>
       </nav>
     </footer>
-    <footer class="footer bg-base-200 text-base-content border-base-300 border-t px-10 py-4">
+    <footer class="footer border-orange-500 bg-base-200 text-base-content border-base-300 border-t px-10 py-4">
       <aside class="grid-flow-col items-center">
         <span class="size-10">
           <img src="Resourcces/imgages/foody-logo.png" alt="" srcset=""></span>
