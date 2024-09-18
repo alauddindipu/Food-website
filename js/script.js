@@ -32,7 +32,8 @@ const showMeals = meals => {
 
     mealCard.innerHTML = `
             <figure">
-                <img src=${meal.strMealThumb} alt="Image of ${meal.strMeal}" />
+                <img class="h-96 mx-auto" src=${
+    meal.strMealThumb} alt="Image of ${meal.strMeal}" />
             </figure>
             <div class="card-body">
                 <h2 class="card-title">${meal.strMeal}</h2>
@@ -40,7 +41,7 @@ const showMeals = meals => {
     meal.strInstructions}" >${meal.strInstructions.slice(0, 200)}...</p>
                 <div class="card-actions justify-end">
                     <button onclick="handleShowDetails(${
-    meal.idMeal})" class="btn btn-primary">Show Details</button>
+    meal.idMeal})" class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-full">Details</button>
                 </div>
             </div>   
         `;
@@ -58,7 +59,7 @@ const showMealDetails = meal => {
 
   const showDetailsContainer = document.getElementById("meal-details-cotainer");
   showDetailsContainer.innerHTML = `
-      <img class="h-96 mx-auto" src="${meal.strMealThumb}" alt="meal details image">
+      <img class="h-48 mx-auto" src="${meal.strMealThumb}" alt="meal details image">
       <p class="mt-4 text-2xl text-semibild">Name: ${meal.strMeal}</p>
       <p class="mt-4 text-2xl text-semibild">Food Category: ${meal.strCategory}</p>
       <p class="text-semibild">Description: ${meal.strInstructions}</p>

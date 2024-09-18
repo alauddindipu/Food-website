@@ -12,6 +12,32 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <style>
+      .buttons {
+        /* margin: 10px; */
+        padding: 0 40px;
+        /* text-align: center; */
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        font-weight: 900;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 20px #eee;
+        border-radius: 10px;
+      }
+
+      /* Demo Stuff End -> */
+
+      /* <- Magic Stuff Start */
+
+      .btn:hover {
+        background-position: right center;
+        /* change the direction of the change here */
+      }
+
+      .btn-1 {
+        background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+      }
+
       .selected {
         color: goldenrod;
         background-color: rgb(253, 229, 229);
@@ -87,7 +113,7 @@
               <p class="mb-3">
                 Drizzled with a tangy garlic aioli or sprinkled with fresh chives, these potatoes offer an irresistible combination of textures and flavors that make them a standout side dish or satisfying snack.
               </p>
-              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Get Now</button>
+              <button class="buttons btn btn-1 text-2xl">Get Now</button>
             </div>
           </div>
         </div>
@@ -106,7 +132,7 @@
               <p class="mb-5">
                 Subtly sweet with a hint of creamy richness, enhanced by a touch of earthy sage and a swirl of tangy crème fraîche. Each spoonful is a harmonious blend of smooth, velvety texture and delicate spices, making it a perfect, heartwarming dish for any occasion.
               </p>
-              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Get Now</button>
+              <button class="buttons btn btn-1 text-2xl">Get Now</button>
             </div>
           </div>
         </div>
@@ -125,7 +151,7 @@
               <p class="mb-5">
                 Envision succulent, herb-marinated chicken breasts, grilled to perfection with a golden, slightly crispy exterior and a tender, juicy interior. Infused with a medley of fresh thyme, rosemary, and garlic, each bite is bursting with savory, aromatic flavors
               </p>
-              <button class="bg-blue-500 hover:bg-blue-700  text-white font-bold py-2 px-4 rounded-full">Get Now</button>
+              <button class="buttons btn btn-1 text-2xl">Get Now</button>
             </div>
           </div>
         </div>
@@ -144,7 +170,7 @@
               <p class="mb-5">
                 Tender and juicy, with each bite offering a robust, beefy flavor enhanced by a touch of garlic and rosemary.
               </p>
-              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Get Now</button>
+              <button class="buttons btn btn-1 text-2xl">Get Now</button>
             </div>
           </div>
         </div>
@@ -171,7 +197,7 @@
           <div id="meal-details-cotainer"></div>
           <div class="modal-action">
             <form method="dialog">
-              <button class="btn">Close</button>
+              <button class="btn bg-orange-500 hover:bg-orange-700 ">Close</button>
             </form>
           </div>
         </div>
@@ -235,9 +261,9 @@
         <span class="size-10">
           <img src="Resourcces/imgages/foody-logo.png" alt="" srcset=""></span>
         <p>
-          foody Industries Ltd.
+          foody Company Ltd, Sirajganj.
           <br/>
-          Providing reliable food since 1971
+          Providing reliable food since 1971.
         </p>
       </aside>
       <span class="justify-self-center">Copyright © 2024 - All right reserved</span>
